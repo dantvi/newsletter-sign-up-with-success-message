@@ -24,7 +24,7 @@ body {
 }
 
 /* Hidden elements */
-#error-message, #success-message {
+.hidden {
     display: none;
 }
 
