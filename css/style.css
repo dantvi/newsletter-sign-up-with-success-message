@@ -22,3 +22,15 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--dark-slate-grey);
 }
+
+/* Hidden elements */
+#error-message, #success-message {
+    display: none;
+}
+
+
+/* Sign-up form */
+
+
+/* Success message */
+
