@@ -14,7 +14,7 @@
   <main>
 
     <!-- Sign-up form -->
-    <div class="card-container">
+    <div id="sign-up-form" class="card-container">
       <div class="card">
         <article class="card-content">
           <section class="card-text-content">
@@ -35,11 +35,11 @@
               </li>
             </ul>
           </section>
-          <form action="">
-            <label for="">Email address</label>
-            <span class="error-message">Valid email required</span>
-            <input type="email" name="" id="" placeholder="email@company.com">
-            <button>Subscribe to monthly newsletter</button>
+          <form id="form">
+            <label for="email">Email address</label>
+            <span id="error-message" class="error-message hidden">Valid email required</span>
+            <input id="email-input-field" type="text" name="email" placeholder="email@company.com">
+            <button id="submit-button" type="submit">Subscribe to monthly newsletter</button>
           </form>
         </article>
         <div class="card-image-container">
@@ -49,16 +49,16 @@
     </div>
 
     <!-- Success message -->
-    <div class="card-container">
+    <div id="success-message" class="card-container hidden">
       <div class="card">
         <article class="card-content">
           <div class="image-container">
             <img src="" alt="">
           </div>
           <h2>Thanks for subscribing!</h2>
-          <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click
+          <p>A confirmation email has been sent to <span id="userEmail">ash@loremcompany.com</span>. Please open it and click
             the button inside to confirm your subscription.</p>
-          <button>Dismiss message</button>
+          <button id="dismiss-button">Dismiss message</button>
         </article>
       </div>
     </div>
