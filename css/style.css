@@ -20,17 +20,40 @@ body {
     line-height: 150%;
     letter-spacing: 0px;
     font-family: "Roboto", sans-serif;
+    background-color: var(--charcoal-grey);
     color: var(--dark-slate-grey);
 }
 
-/* Hidden elements */
+/* Reusable classes */
 .hidden {
     display: none;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Sign-up form */
+.card-container {
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid #151515;
+    border-radius: 36px;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+}
+
+#sign-up-card {
+    max-width: 92.8rem;
+}
+
+
+
+
 
 
 /* Success message */
-
