@@ -24,7 +24,15 @@ body {
     color: var(--dark-slate-grey);
 }
 
-/* Reusable classes */
+/* Typography Styles */
+.text__card-desktop-heading {
+    font-size: 5.6rem;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+/* Other reusable classes */
 .hidden {
     display: none;
 }
@@ -41,6 +49,7 @@ body {
 }
 
 .card {
+    display: flex;
     background-color: var(--white);
     border: 1px solid #151515;
     border-radius: 36px;
@@ -51,9 +60,32 @@ body {
     max-width: 92.8rem;
 }
 
+.card-content {
+    padding: 9.7rem 6.4rem;
+}
 
+.card-text-content p {
+    margin: 2.4rem 0;
+}
 
+.checkmark-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.checkmark-item {
+    display: flex;
+    gap: 16px;
+}
 
+/* .checkmark-item span {
+    margin-left: 1.6rem;
+} */
+
+.sign-up-image {
+    margin: 2.4rem 2.4rem 2.4rem 0;
+    max-width: 40rem;
+}
 
 /* Success message */
