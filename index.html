@@ -14,50 +14,57 @@
   <main>
 
     <!-- Sign-up form -->
-    <div id="sign-up-form" class="card-container center">
-      <div id="sign-up-card" class="card">
-        <article class="card-content">
-          <section class="card-text-content">
-            <h1 class="text__card-desktop-heading">Stay updated!</h1>
-            <p>Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul class="checkmark-list">
-              <li class="checkmark-item">
-                <img src="./images/icon-list.svg" alt="Red circle with a white checkmark inside.">
-                <span>Product discovery and building what matters</span>
-              </li>
-              <li class="checkmark-item">
-                <img src="./images/icon-list.svg" alt="Red circle with a white checkmark inside.">
-                <span>Measuring to ensure updates are a success</span>
-              </li>
-              <li class="checkmark-item">
-                <img src="./images/icon-list.svg" alt="Red circle with a white checkmark inside.">
-                <span>And much more!</span>
-              </li>
-            </ul>
-          </section>
-          <form id="form" class="form">
-            <div class="email-info-wrapper">
-              <label for="email" class="text__card-body-small">Email address</label>
-              <span id="error-message" class="error-message text__card-body-small hidden">Valid email required</span>
-            </div>
-            <input class="email-input-field" id="email-input-field" type="text" name="email" placeholder="email@company.com">
-            <button class="submit-button" id="submit-button" type="submit">Subscribe to monthly newsletter</button>
-          </form>
-        </article>
-        <img class="sign-up-image" src="./images/illustration-sign-up-desktop.svg" alt="Illustration showing web performance metrics with a line graph, a score of 94, and a desktop browser window.">
+    <div id="sign-up-form">
+      <div class="card-container center">
+        <div id="sign-up-card" class="card">
+          <article class="card-content">
+            <section class="card-text-content">
+              <h1 class="text__card-desktop-heading">Stay updated!</h1>
+              <p>Join 60,000+ product managers receiving monthly updates on:</p>
+              <ul class="checkmark-list">
+                <li class="checkmark-item">
+                  <img src="./images/icon-list.svg" alt="Red circle with a white checkmark inside.">
+                  <span>Product discovery and building what matters</span>
+                </li>
+                <li class="checkmark-item">
+                  <img src="./images/icon-list.svg" alt="Red circle with a white checkmark inside.">
+                  <span>Measuring to ensure updates are a success</span>
+                </li>
+                <li class="checkmark-item">
+                  <img src="./images/icon-list.svg" alt="Red circle with a white checkmark inside.">
+                  <span>And much more!</span>
+                </li>
+              </ul>
+            </section>
+            <form id="form" class="form">
+              <div class="email-info-wrapper">
+                <label for="email" class="text__card-body-small">Email address</label>
+                <span id="error-message" class="error-message text__card-body-small hidden">Valid email required</span>
+              </div>
+              <input class="email-input-field" id="email-input-field" type="text" name="email"
+                placeholder="email@company.com">
+              <button class="submit-button" id="submit-button" type="submit">Subscribe to monthly newsletter</button>
+            </form>
+          </article>
+          <img class="sign-up-image" src="./images/illustration-sign-up-desktop.svg"
+            alt="Illustration showing web performance metrics with a line graph, a score of 94, and a desktop browser window.">
+        </div>
       </div>
     </div>
 
     <!-- Success message -->
-    <div id="success-message" class="card-container hidden">
-      <div id="success-card" class="card">
-        <article class="card-content">
-          <img class="success-image" src="" alt="">
-          <h2>Thanks for subscribing!</h2>
-          <p>A confirmation email has been sent to <span id="userEmail">ash@loremcompany.com</span>. Please open it and click
-            the button inside to confirm your subscription.</p>
-          <button id="dismiss-button">Dismiss message</button>
-        </article>
+    <div id="success-message" class="hidden">
+      <div class="card-container">
+        <div id="success-card" class="card">
+          <article class="card-content">
+            <img class="success-image" src="" alt="">
+            <h2>Thanks for subscribing!</h2>
+            <p>A confirmation email has been sent to <span id="userEmail">ash@loremcompany.com</span>. Please open it
+              and click
+              the button inside to confirm your subscription.</p>
+            <button id="dismiss-button">Dismiss message</button>
+          </article>
+        </div>
       </div>
     </div>
 
