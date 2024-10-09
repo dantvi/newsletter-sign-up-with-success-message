@@ -35,11 +35,13 @@
               </li>
             </ul>
           </section>
-          <form id="form">
-            <label for="email">Email address</label>
-            <span id="error-message" class="error-message hidden">Valid email required</span>
-            <input id="email-input-field" type="text" name="email" placeholder="email@company.com">
-            <button id="submit-button" type="submit">Subscribe to monthly newsletter</button>
+          <form id="form" class="form">
+            <div class="email-info-wrapper">
+              <label for="email" class="text__card-body-small">Email address</label>
+              <span id="error-message" class="error-message text__card-body-small hidden">Valid email required</span>
+            </div>
+            <input class="email-input-field" id="email-input-field" type="text" name="email" placeholder="email@company.com">
+            <button class="submit-button" id="submit-button" type="submit">Subscribe to monthly newsletter</button>
           </form>
         </article>
         <img class="sign-up-image" src="./images/illustration-sign-up-desktop.svg" alt="Illustration showing web performance metrics with a line graph, a score of 94, and a desktop browser window.">

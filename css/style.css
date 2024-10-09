@@ -32,6 +32,13 @@ body {
     letter-spacing: 0px;
 }
 
+.text__card-body-small {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
 /* Other reusable classes */
 .hidden {
     display: none;
@@ -64,6 +71,10 @@ body {
     padding: 9.7rem 6.4rem;
 }
 
+.card-text-content {
+    margin-bottom: 4rem;
+}
+
 .card-text-content p {
     margin: 2.4rem 0;
 }
@@ -79,9 +90,55 @@ body {
     gap: 16px;
 }
 
-/* .checkmark-item span {
-    margin-left: 1.6rem;
-} */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message {
+    color: var(--tomato);
+}
+
+.email-input-field {
+    margin: 0.8rem 0 2.4rem 0;
+    padding: 1.9rem 2.4rem;
+    border: 1px solid rgba(25, 24, 43, 0.25);
+    border-radius: 8px;
+}
+
+.email-input-field:focus {
+    outline: none;
+    border-color: var(--dark-slate-grey);
+}
+
+.email-input-error {
+    color: var(--tomato);
+    background-color: rgba(255, 97, 85, 0.15);
+    border-color: var(--tomato);
+}
+
+.submit-button {
+    padding: 2rem 7.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 8px;
+}
+
+.submit-button:hover {
+    background: linear-gradient(#FF6A3A, #FF527B);
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
 
 .sign-up-image {
     margin: 2.4rem 2.4rem 2.4rem 0;
