@@ -24,6 +24,8 @@ function validateEmail(email) {
       userInputEl.classList.remove('email-input-error');
       showingErrorMessage = false;
     }
+    // Remove user mail from input field
+    userInputEl.value = '';
   } else {
     // Show error message
     errorMessage.classList.remove('hidden');
