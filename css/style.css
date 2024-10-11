@@ -20,17 +20,153 @@ body {
     line-height: 150%;
     letter-spacing: 0px;
     font-family: "Roboto", sans-serif;
+    background-color: var(--charcoal-grey);
     color: var(--dark-slate-grey);
 }
 
-/* Hidden elements */
+/* Typography Styles */
+.text__card-desktop-heading {
+    font-size: 5.6rem;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text__card-body-small {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+/* Other reusable classes */
 .hidden {
     display: none;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Sign-up form */
+.card-container {
+    min-height: 100vh;
+}
 
+.card {
+    display: flex;
+    background-color: var(--white);
+    border: 1px solid #151515;
+    border-radius: 36px;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+}
+
+#sign-up-card {
+    max-width: 92.8rem;
+}
+
+.card-content {
+    padding: 9.7rem 6.4rem;
+}
+
+.card-text-content {
+    margin-bottom: 4rem;
+}
+
+.card-text-content p {
+    margin: 2.4rem 0;
+}
+
+.checkmark-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkmark-item {
+    display: flex;
+    gap: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message {
+    color: var(--tomato);
+}
+
+.email-input-field {
+    margin: 0.8rem 0 2.4rem 0;
+    padding: 1.9rem 2.4rem;
+    border: 1px solid rgba(25, 24, 43, 0.25);
+    border-radius: 8px;
+}
+
+.email-input-field:focus {
+    outline: none;
+    border-color: var(--dark-slate-grey);
+}
+
+.email-input-error {
+    color: var(--tomato);
+    background-color: rgba(255, 97, 85, 0.15);
+    border-color: var(--tomato);
+}
+
+.button {
+    padding: 2rem 7.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background: linear-gradient(#FF6A3A, #FF527B);
+    box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.sign-up-image {
+    margin: 2.4rem 2.4rem 2.4rem 0;
+    max-width: 40rem;
+}
 
 /* Success message */
+#success-card {
+    max-width: 50.4rem;
+}
 
+.success-card-content {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.success-card-content h2 {
+    margin: 4rem 0 2.4rem 0;
+}
+
+.success-card-content p {
+    margin-bottom: 4rem;
+}
+
+#userEmail {
+    font-weight: bold;
+}
+
+#dismiss-button {
+    width: 37.6rem;
+}

@@ -21,11 +21,15 @@ function validateEmail(email) {
     signUpFormEl.classList.add('hidden');
     if (showingErrorMessage) {
       errorMessage.classList.add('hidden');
+      userInputEl.classList.remove('email-input-error');
       showingErrorMessage = false;
     }
+    // Remove user mail from input field
+    userInputEl.value = '';
   } else {
     // Show error message
     errorMessage.classList.remove('hidden');
+    userInputEl.classList.add('email-input-error');
     showingErrorMessage = true;
   }
 }
@@ -36,11 +40,11 @@ const validateForm = () => {
   if (inputValue === '') {
     // Show error message
     errorMessage.classList.remove('hidden');
+    userInputEl.classList.add('email-input-error');
     showingErrorMessage = true;
     return;
   }
   validateEmail(inputValue);
-  userInputEl.value = '';
 }
 
 const processFormData = (e) => {
