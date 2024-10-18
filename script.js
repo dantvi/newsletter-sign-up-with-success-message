@@ -9,6 +9,17 @@ const successMessage = document.getElementById('success-message');
 let showingErrorMessage = false;
 let userEmail = '';
 
+function sendEmailToServer(email) {
+  fetch('http://localhost:3000/register', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      email: email
+    })
+  })
+    .then(response => response.json());
+}
+
 function validateEmail(email) {
   userEmail = email;
   const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -24,6 +35,8 @@ function validateEmail(email) {
       userInputEl.classList.remove('email-input-error');
       showingErrorMessage = false;
     }
+    // Send email to server
+    sendEmailToServer(userEmail);
     // Remove user mail from input field
     userInputEl.value = '';
   } else {
