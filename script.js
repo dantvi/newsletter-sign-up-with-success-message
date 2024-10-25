@@ -17,13 +17,21 @@ function sendEmailToServer(email) {
       email: email
     })
   })
-    .then(response => response.json());
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.log('Error:', error);
+    });
 }
 
 function validateEmail(email) {
   userEmail = email;
   const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (email.match(validRegex)) {
+    // Send email to server
+    sendEmailToServer(userEmail);
     // Set User Email to Success Page
     userEmailEl.textContent = userEmail;
     // Show Success Page
@@ -35,8 +43,6 @@ function validateEmail(email) {
       userInputEl.classList.remove('email-input-error');
       showingErrorMessage = false;
     }
-    // Send email to server
-    sendEmailToServer(userEmail);
     // Remove user mail from input field
     userInputEl.value = '';
   } else {
