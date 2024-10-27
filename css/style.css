@@ -190,4 +190,21 @@ body {
     .sign-up-image {
         margin: 0;
     }
+
+    #success-card {
+        height: 81.2rem;
+        flex-direction: column;
+    }
+
+    .success-card-content {
+        padding: 14.9rem 2.4rem 4rem 2.4rem;
+    }
+
+    .success-card-content p {
+        margin-bottom: 26.3rem;
+    }
+
+    #dismiss-button {
+        width: 100%;
+    }
 }
