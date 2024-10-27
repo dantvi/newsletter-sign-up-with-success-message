@@ -25,7 +25,7 @@ body {
 }
 
 /* Typography Styles */
-.text__card-desktop-heading {
+.text__card-heading {
     font-size: 5.6rem;
     font-weight: bold;
     line-height: 100%;
@@ -169,4 +169,49 @@ body {
 
 #dismiss-button {
     width: 37.6rem;
+}
+
+/* Media Query - Tablets and Large Mobile */
+@media screen and (max-width: 780px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 40rem;
+        border-radius: 0;
+    }
+
+    .card-content {
+        padding: 4rem 2.4rem;
+    }
+
+    .text__card-heading {
+        font-size: 4rem;
+    }
+
+    .sign-up-image {
+        margin: 0;
+    }
+
+    #success-card {
+        height: 81.2rem;
+        flex-direction: column;
+    }
+
+    .success-card-content {
+        padding: 14.9rem 2.4rem 4rem 2.4rem;
+    }
+
+    .success-card-content p {
+        margin-bottom: 26.3rem;
+    }
+
+    #dismiss-button {
+        width: 100%;
+    }
+}
+
+/* Media Query - Small Mobile */
+@media screen and (max-width: 378px) {
+    .card {
+        width: 90%;
+    }
 }

@@ -5,9 +5,19 @@ const userEmailEl = document.getElementById('userEmail');
 const dismissButton = document.getElementById('dismiss-button');
 const errorMessage = document.getElementById('error-message');
 const successMessage = document.getElementById('success-message');
+const imageEl = document.getElementById('sign-up-image');
+const mediaQuery = window.matchMedia("(max-width: 780px)");
 
 let showingErrorMessage = false;
 let userEmail = '';
+
+function updateImageSrc(e) {
+  if (e.matches) {
+    imageEl.src = './images/illustration-sign-up-mobile.svg';
+  } else {
+    imageEl.src = './images/illustration-sign-up-desktop.svg';
+  }
+}
 
 function sendEmailToServer(email) {
   fetch('http://localhost:3000/register', {
@@ -78,5 +88,10 @@ const showLandingPage = () => {
   successMessage.classList.add('hidden');
 }
 
+// On Load
+updateImageSrc(mediaQuery);
+
+// Event listeners
 form.addEventListener('submit', processFormData);
 dismissButton.addEventListener('click', showLandingPage);
+mediaQuery.addEventListener("change", updateImageSrc);
