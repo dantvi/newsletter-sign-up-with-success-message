@@ -208,3 +208,10 @@ body {
         width: 100%;
     }
 }
+
+/* Media Query - Small Mobile */
+@media screen and (max-width: 378px) {
+    .card {
+        width: 90%;
+    }
+}
