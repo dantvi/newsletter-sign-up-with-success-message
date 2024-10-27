@@ -25,7 +25,7 @@ body {
 }
 
 /* Typography Styles */
-.text__card-desktop-heading {
+.text__card-heading {
     font-size: 5.6rem;
     font-weight: bold;
     line-height: 100%;
@@ -169,4 +169,25 @@ body {
 
 #dismiss-button {
     width: 37.6rem;
+}
+
+/* Media Query - Tablets and Large Mobile */
+@media screen and (max-width: 780px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 40rem;
+        border-radius: 0;
+    }
+
+    .card-content {
+        padding: 4rem 2.4rem;
+    }
+
+    .text__card-heading {
+        font-size: 4rem;
+    }
+
+    .sign-up-image {
+        margin: 0;
+    }
 }
